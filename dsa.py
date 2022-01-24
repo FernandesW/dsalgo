@@ -839,12 +839,12 @@ class BinaryNode:
 
 
 class LeftViewTree:
-    def get_result(self, root):
+    def get_result_right(self, root):
         if root is None:
             return
         print(root.node)
-        self.get_result(root.left)
-        self.get_result(root.right)
+        self.get_result_right(root.left)
+        self.get_result_right(root.right)
 
     def traverse_left(self, root):
         if root is None:
@@ -879,7 +879,7 @@ if __name__ == "__main__":
     root.right.left = BinaryNode(6)
     root.right.right = BinaryNode(7)
     root.right.right.right = BinaryNode(8)
-    # # LeftViewTree().get_result(root)
+    LeftViewTree().get_result_right(root)
     # LeftViewTree().get_left_right_print(root)
     # exit()
     # """
