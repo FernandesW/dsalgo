@@ -852,7 +852,7 @@ class LeftViewTree:
         self.traverse_left(root.left)
         print(root.node)
 
-    def traverse_right(self,root):
+    def traverse_right(self, root):
         if root is None:
             return
 
@@ -871,14 +871,14 @@ if __name__ == "__main__":
     #     2           3
     # 4       5    6       7
     obj = Solution()
-    # root = BinaryNode(1)
-    # root.left = BinaryNode(2)
-    # root.right = BinaryNode(3)
-    # root.left.left = BinaryNode(4)
-    # root.left.right = BinaryNode(5)
-    # root.right.left = BinaryNode(6)
-    # root.right.right = BinaryNode(7)
-      root.right.right.right = BinaryNode(8)
+    root = BinaryNode(1)
+    root.left = BinaryNode(2)
+    root.right = BinaryNode(3)
+    root.left.left = BinaryNode(4)
+    root.left.right = BinaryNode(5)
+    root.right.left = BinaryNode(6)
+    root.right.right = BinaryNode(7)
+    root.right.right.right = BinaryNode(8)
     # # LeftViewTree().get_result(root)
     # LeftViewTree().get_left_right_print(root)
     # exit()
