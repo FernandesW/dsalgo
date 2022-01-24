@@ -878,7 +878,7 @@ if __name__ == "__main__":
     # root.left.right = BinaryNode(5)
     # root.right.left = BinaryNode(6)
     # root.right.right = BinaryNode(7)
-    #
+      root.right.right.right = BinaryNode(8)
     # # LeftViewTree().get_result(root)
     # LeftViewTree().get_left_right_print(root)
     # exit()
